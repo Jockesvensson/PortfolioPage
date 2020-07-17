@@ -29,26 +29,31 @@ export default {
 
 <style scoped lang="scss">
 
+.footer-wrapper {
+    border: 1px solid black;
+    background-color: black;
+}
+
 .site-footer-btn-container {
     height: 40px;
     justify-content: center;
     text-align: center;
     margin-top: 20px;
-    background-color: lightgreen;
 }
 
 .site-footer-btn {
-    margin-top: 5px;
+    margin-top: 0px;
     border: none;
     font-size: 20px;
-    background-color: pink;
+    background-color: lightseagreen;
+    color: white;
 }
 
 .site-footer-copyright {
     height: 40px;
     justify-content: center;
     text-align: center;
-    background-color: lightgreen;
+    color: #ffffff;
 }
 
 </style>

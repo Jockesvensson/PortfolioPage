@@ -39,37 +39,37 @@ export default {
             const y = element.getBoundingClientRect().top + window.pageYOffset + yOffset;
 
             window.scrollTo({top: y, behavior: 'smooth'});
-            this.show = false;
+            this.toggle = false;
         },
         gotoAbout() {
             // document.querySelector("#about").scrollIntoView({ behavior: 'smooth' });
             const id = 'about';
-            const yOffset = -50; 
+            const yOffset = -40; 
             const element = document.getElementById(id);
             const y = element.getBoundingClientRect().top + window.pageYOffset + yOffset;
 
             window.scrollTo({top: y, behavior: 'smooth'});
-            this.show = false;
+            this.toggle = false;
         },
         gotoPortfolio() {
             // document.querySelector("#portfolio").scrollIntoView({ behavior: 'smooth' });
             const id = 'portfolio';
-            const yOffset = -50; 
+            const yOffset = -40; 
             const element = document.getElementById(id);
             const y = element.getBoundingClientRect().top + window.pageYOffset + yOffset;
 
             window.scrollTo({top: y, behavior: 'smooth'});
-            this.show = false;
+            this.toggle = false;
         },
         gotoContact() {
             // document.querySelector("#contact").scrollIntoView({ behavior: 'smooth' });
             const id = 'contact';
-            const yOffset = -50; 
+            const yOffset = -39; 
             const element = document.getElementById(id);
             const y = element.getBoundingClientRect().top + window.pageYOffset + yOffset;
 
             window.scrollTo({top: y, behavior: 'smooth'});
-            this.show = false;
+            this.toggle = false;
         },
     }
 
@@ -84,19 +84,20 @@ export default {
     top: 0;
     width: 100%;
     z-index: 3;
-    background-color: white;
+    font-size: 16px;
+    background-color: #1b242f;
 }
 
 
 .site-nav-small-wrapper {
-    margin-top: 10px;
     position:relative;
     overflow: hidden;
 }
 
 .site-nav-small {
+    margin-top: 10px;
     padding-right: 20px;
-    border-bottom: 3px solid green;
+    border-bottom: 3px solid #04c2c9;
 }
 
 .site-nav-small li{
@@ -105,8 +106,13 @@ export default {
     text-align: left;
 }
 
-.slide-enter-active, .slide-leave-active  {
-    transition: all .6s ease;
+.slide-enter-active {
+    // transition: all .6s ease;
+    opacity: 1;
+}
+
+.slide-leave-active {
+    opacity: 0;
 }
 
 .slide-enter, .slide-leave-to {
@@ -118,7 +124,7 @@ export default {
     height: 40px;
     justify-content: center;
     text-align: center;
-    border-bottom: 3px solid green;
+    border-bottom: 3px solid #04c2c9;
 }
 
 @media only screen and (max-width: 479px) {
@@ -148,7 +154,11 @@ export default {
 }
 
 .nav-text-home {
-    color: green;
+    color: rgb(25, 150, 81);
+}
+
+.nav-text {
+    color: white;
 }
 
 .nav-text:hover,
@@ -160,7 +170,7 @@ export default {
     text-align: left;
     padding: 5px 0px 0px 10px;
     height: 40px;
-    border-bottom: 3px solid green;
+    border-bottom: 3px solid #04c2c9;
 }
 
 @media only screen and (min-width: 479px) {
@@ -174,7 +184,7 @@ export default {
     text-decoration: none;
     border: none;
     cursor: pointer;
-    background-color: #ffffff;
+    background-color: #1b242f;
 }
 
 .site-nav-small-btn:focus {
@@ -183,6 +193,9 @@ export default {
 
 @media only screen and (min-width: 479px) {
     .site-nav-small {
+        display: none !important;
+    }
+    .site-nav-small-wrapper {
         display: none !important;
     }
     .site-nav-small-btn{

@@ -12,7 +12,7 @@ const items = [{
     {
         id: 2,
         name: 'Hälsoapplikation',
-        language: 'Vue.js',
+        language: 'Vue.JS',
         title: 'Hemsida för att räkna kalorier',
         description: 'Mitt första försökt till att skapa en hemsida i Vue.JS. Använde en api för att söka ut näringsinnehållet i råvarorna och sedan firebase för att lagra data/skapa profiler.',
         githubLink: 'https://github.com/Jockesvensson/FoodTracker',
@@ -23,7 +23,7 @@ const items = [{
     {
         id: 3,
         name: 'Webshop',
-        language: 'Vue.js',
+        language: 'Vue.JS',
         title: 'En enklare webshop',
         description: 'Min andra hemsida skapad i vue.js, denna gång mer fokus på att lära mig Vue/Vuex Store och dess funktioner.',
         githubLink: 'https://github.com/Jockesvensson/WebshopV2',
@@ -34,7 +34,7 @@ const items = [{
     {
         id: 4,
         name: 'Webshop',
-        language: 'HMTL/CSS/jQuery/PHP',
+        language: 'HTML/CSS/jQuery',
         title: 'Startsida på en webshop',
         description: 'En testuppgift jag skulle lösa. Fick en bildmall som jag skulle efterskapa.',
         githubLink: 'https://github.com/Jockesvensson/WebshopPHP',
@@ -76,7 +76,7 @@ const items = [{
     {
         id: 8,
         name: 'Min hemsida',
-        language: 'HTML/jQuery',
+        language: 'HTML/CSS/jQuery',
         title: 'Information/portfoliosida',
         description: 'Skapade en hemsida ägnad för mig själv. Där det finns lite information om mig samt där jag kan ladda upp tidigare projekt som jag har skapat. Detta är den första versionen.',
         githubLink: 'https://github.com/Jockesvensson/JockeWebSite',

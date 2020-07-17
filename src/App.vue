@@ -70,6 +70,13 @@ nav {
 .border-title {
     position: relative;
     text-align: center;
+    top: 4%;
+}
+
+@media only screen and (max-width: 479px) {
+  .border-title {
+    top: 20px;
+}
 }
 
 .border-title span {
@@ -87,7 +94,7 @@ nav {
     right: 0;
     top: 50%;
     height: 1px;
-    background-color: #eee;
+    background-color: #000000;
     content: '';
 }
 
@@ -101,11 +108,6 @@ nav {
     padding: 0px 5%;
 }
 
-.product-item {
-    // margin: 10px 0px;
-    border: 1px solid lightgray;
-}
-
 img {
     max-width: 100%;
     max-height: 100%;
@@ -114,12 +116,12 @@ img {
 }
 
 .text-container{
-  padding: 0px 5%;
+  padding: 4% 5%;
 }
 
 @media only screen and (min-width: 767px) {
   .text-container{
-    padding: 0px 15%;
+    padding: 2% 15%;
   }
 }
 
