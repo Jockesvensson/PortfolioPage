@@ -49,6 +49,10 @@ export default {
     color: white;
 }
 
+.site-footer-btn:focus {
+    outline: none;
+}
+
 .site-footer-copyright {
     height: 40px;
     justify-content: center;

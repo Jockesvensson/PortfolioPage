@@ -13,7 +13,7 @@
                     Jag är en kille som nyligen har påbörat min resa inom utveckling.
                     Jag söker nu ett jobb där jag kan fortsätta min resa och utvecklas vidare inom yrkesområdet.
                     För tillfället håller jag på att lära mig Vue.JS.
-                    De områden inom utveckling som jag tycker är extra intressant är RPA/AI, frontäend same SQL/BI (datahantering/analys)
+                    De områden inom utveckling som jag tycker är extra intressant är RPA/AI, frontend samt SQL/BI (datahantering/analys)
                 </div>
             </div>
         </div>
@@ -38,16 +38,16 @@ export default {
 
 <style scoped lang="scss">
 
-.about-container {
-    // border: 1px solid red;
-}
-
-@media only screen and (min-width: 319px) {
+@media only screen and (min-width: 479px) {
     #about {
         height: 100vh;
         justify-content: center;
         align-items: center;
     }
+}
+
+.text-container {
+    margin-bottom: 30px;
 }
 
 .about-wrapper {
