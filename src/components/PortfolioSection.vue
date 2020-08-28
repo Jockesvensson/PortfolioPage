@@ -5,7 +5,8 @@
                 <h2 class="border-title"><span>PROJEKT</span></h2>
                 <div class="text-container text-portfolio">
                     Nedan finner ni några av de projekt som jag har gjort.
-                    Denna sektion kommer att fyllas på allt eftersom jag har något nytt att visa.
+                    Denna sektion kommer att fyllas på allt eftersom jag har något nytt att visa.<br>
+                    <button @click="openGitHubUrlProject()" class="btn-github">Till min Github</button>
                 </div>
 
                 <div class="filter-container">
@@ -153,6 +154,9 @@ export default {
         },
         openHomePageUrl() {
             window.open(this.itemInfo.websiteLink, '_blank');
+        },
+        openGitHubUrlProject() {
+            window.open('https://github.com/Jockesvensson', '_blank');
         },
         closeModal() {
             this.showModal = false;
@@ -468,6 +472,16 @@ a {
     top: 7px;
     font-size: 20px;
     cursor: pointer;
+}
+
+.btn-github {
+    margin-top: 10px;
+    font-size: 18px;
+    border: 1px solid black;
+}
+
+.btn-github:focus {
+    outline: none;
 }
 
 </style>
