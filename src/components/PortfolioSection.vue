@@ -281,7 +281,7 @@ export default {
 
 @media only screen and (min-width: 767px) {
     #portfolio-wrapper {
-        height: 100vh;
+        // height: 100vh;
         justify-content: center;
         align-items: center;
     }
